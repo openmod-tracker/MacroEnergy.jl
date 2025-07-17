@@ -1,6 +1,5 @@
 module MacroEnergy
 
-using Infiltrator
 using CSV, JSON3, GZip, Parquet2
 using Dates
 using DuckDB

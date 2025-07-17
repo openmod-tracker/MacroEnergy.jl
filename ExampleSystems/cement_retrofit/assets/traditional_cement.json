@@ -51,16 +51,15 @@
                 {
                     "id": "traditional_cement_MA",
                     "location": "MA",
-                    "existing_capacity": 100
-                },
-                {
-                    "id": "traditional_cement_CT",
-                    "location": "CT",
-                    "existing_capacity": 100,
+                    "edges": {
+                        "cement_edge":{
+                            "existing_capacity": 100
+                        }
+                    },
                     "retrofit_options": [
                         {
-                            "template_id": "traditional_cement_CT",
-                            "id": "traditional_cement_CT_retrofitfom",
+                            "template_id": "traditional_cement_MA",
+                            "id": "traditional_cement_MA_retrofitfom",
                             "edges": {
                                 "cement_edge": {
                                     "is_retrofit": true,
@@ -71,12 +70,12 @@
                             }
                         },
                         {
-                            "template_id": "traditional_cement_CT",
-                            "id": "traditional_cement_CT_retrofitfuel",
+                            "template_id": "traditional_cement_MA",
+                            "id": "traditional_cement_MA_retrofitfuel",
                             "fuel_commodity": "LiquidFuels",
                             "transforms": {
-                                "fuel_consumption_rate": 1,
-                                "fuel_emission_rate": 0
+                                "fuel_consumption_rate": 1.06,
+                                "fuel_emission_rate": 0.05
                             },
                             "edges": {
                                 "fuel_edge": {
@@ -86,17 +85,39 @@
                                 "cement_edge": {
                                     "is_retrofit": true,
                                     "retrofit_efficiency": 1.0,
-                                    "investment_cost": 2000
+                                    "investment_cost": 220939
                                 }
                             }
                         },
+                        {
+                            "template_id": "oxyfuel_cement_MA",
+                            "id": "oxyfuel_cement_MA_retrofit",
+                            "edges": {
+                                "cement_edge": {
+                                    "is_retrofit": true,
+                                    "retrofit_efficiency": 1,
+                                    "investment_cost": 50000
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "traditional_cement_CT",
+                    "location": "CT",
+                    "edges": {
+                        "cement_edge":{
+                            "existing_capacity": 100
+                        }
+                    },
+                    "retrofit_options": [
                         {
                             "template_id": "oxyfuel_cement_CT",
                             "id": "oxyfuel_cement_CT_retrofit",
                             "edges": {
                                 "cement_edge": {
                                     "is_retrofit": true,
-                                    "retrofit_efficiency": 0.95,
+                                    "retrofit_efficiency": 1,
                                     "investment_cost": 50000
                                 }
                             }
@@ -106,7 +127,24 @@
                 {
                     "id": "traditional_cement_ME",
                     "location": "ME",
-                    "existing_capacity": 100
+                    "edges": {
+                        "cement_edge": {
+                            "existing_capacity": 100
+                        }
+                    },
+                    "retrofit_options": [
+                        {
+                            "template_id": "oxyfuel_cement_ME",
+                            "id": "oxyfuel_cement_ME_retrofit",
+                            "edges": {
+                                "cement_edge": {
+                                    "is_retrofit": true,
+                                    "retrofit_efficiency": 1,
+                                    "investment_cost": 50000
+                                }
+                            }
+                        }
+                    ]
                 }
             ]
         }
