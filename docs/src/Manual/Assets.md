@@ -23,7 +23,7 @@ Each asset page follows a consistent structure with the following sections:
 ## Macro Asset Library
 The current library includes the following assets:
 
-- [Battery](@ref)
+### [Battery](@ref)
 
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': { 'background': '#D1EBDE' }}}%%
@@ -35,12 +35,12 @@ flowchart LR
     e1@{ animate: true }
     e2@{ animate: true }
  end
-    style A  r:55px,fill:#FFD700,stroke:black,color:black,stroke-dasharray: 3,5;
+    style A font-size:19px,r:55px,fill:#FFD700,stroke:black,color:black,stroke-dasharray: 3,5;
     style B fill:#FFD700,stroke:black,color:black;
     linkStyle 0,1 stroke:#FFD700, stroke-width: 2px;
 ```
 
-- [BECCS Electricity](@ref)
+### [BECCS Electricity](@ref)
 
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': { 'background': '#D1EBDE' }}}%%
@@ -50,8 +50,8 @@ flowchart LR
     B((Biomass)) e1@--> A{{..}}
     C((CO₂ Source)) e2@--> A
     A e5@--> D((Electricity))
-    A e3@--> E((Emitted CO₂))
-    A e4@--> F((Captured CO₂))
+    A e3@--> E((CO₂ Emitted))
+    A e4@--> F((CO₂ Captured))
     e1@{ animate: true }
     e2@{ animate: true }
     e3@{ animate: true }
@@ -61,16 +61,16 @@ flowchart LR
     style A fill:black,stroke:black,color:black;
     style B r:55px,fill:palegreen,stroke:black,color:black, stroke-dasharray: 3,5;
     style C r:55px,fill:lightgray,stroke:black,color:black, stroke-dasharray: 3,5;
-    style D r:55px,fill:#FFD700,stroke:black,color:black, stroke-dasharray: 3,5;
-    style E r:55px,fill:lightgray,stroke:black,color:black, stroke-dasharray: 3,5;
-    style F r:55px,fill:lightgray,stroke:black,color:black, stroke-dasharray: 3,5;
+    style D font-size:21px,r:55px,fill:#FFD700,stroke:black,color:black, stroke-dasharray: 3,5;
+    style E font-size:17px,r:55px,fill:lightgray,stroke:black,color:black, stroke-dasharray: 3,5;
+    style F font-size:15px,r:55px,fill:lightgray,stroke:black,color:black, stroke-dasharray: 3,5;
 
     linkStyle 0 stroke:palegreen, stroke-width: 2px;
     linkStyle 1,3,4 stroke:lightgray, stroke-width: 2px;
     linkStyle 2 stroke:#FFD700, stroke-width: 2px;
 ```
 
-- [BECCS Hydrogen](@ref)
+### [BECCS Hydrogen](@ref)
 
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': { 'background': '#D1EBDE' }}}%%
@@ -94,19 +94,19 @@ flowchart LR
     style B r:55px,fill:palegreen,stroke:black,color:black, stroke-dasharray: 3,5;
     style C r:55px,fill:lightgray,stroke:black,color:black, stroke-dasharray: 3,5;
     style D r:55px,fill:#FFD700,stroke:black,color:black, stroke-dasharray: 3,5;
-    style E r:55px,fill:lightblue,stroke:black,color:black, stroke-dasharray: 3,5;
-    style F r:55px,fill:lightgray,stroke:black,color:black, stroke-dasharray: 3,5;
-    style G r:55px,fill:lightgray,stroke:black,color:black, stroke-dasharray: 3,5;
+    style E font-size:21px,r:55px,fill:lightblue,stroke:black,color:black, stroke-dasharray: 3,5;
+    style F font-size:17px,r:55px,fill:lightgray,stroke:black,color:black, stroke-dasharray: 3,5;
+    style G font-size:15px,r:55px,fill:lightgray,stroke:black,color:black, stroke-dasharray: 3,5;
 
     linkStyle 0 stroke:palegreen, stroke-width: 2px;
     linkStyle 1 stroke:lightgray, stroke-width: 2px;
     linkStyle 2 stroke:#FFD700, stroke-width: 2px;
-    linkStyle 3 stroke:lightgray, stroke-width: 2px;
+    linkStyle 3 stroke:lightblue, stroke-width: 2px;
     linkStyle 4 stroke:lightgray, stroke-width: 2px;
     linkStyle 5 stroke:lightgray, stroke-width: 2px;
 ```
 
-- [Electric DAC](@ref)
+### [Electric DAC](@ref)
 
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': { 'background': '#D1EBDE' }}}%%
@@ -131,7 +131,7 @@ flowchart LR
   linkStyle 2 stroke:lightgray, stroke-width: 2px;
 ```
 
-- [Electrolyzer](@ref)
+### [Electrolyzer](@ref)
 
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': { 'background': '#D1EBDE' }}}%%
@@ -143,14 +143,15 @@ flowchart LR
   e1@{ animate: true }
   e2@{ animate: true }
  end
-    style A r:55px,fill:#FFD700,stroke:black,color:black,stroke-dasharray: 3,5;
+    style A font-size:19px,r:55px,fill:#FFD700,stroke:black,color:black,stroke-dasharray: 3,5;
     style B fill:black,stroke:black,color:black;
-    style C r:55px,fill:lightblue,stroke:black,color:black,stroke-dasharray: 3,5;
+    style C font-size:21px,r:55px,fill:lightblue,stroke:black,color:black,stroke-dasharray: 3,5;
+
     linkStyle 0 stroke:#FFD700, stroke-width: 2px, stroke-dasharray: 5 5;
     linkStyle 1 stroke:lightblue, stroke-width: 2px, stroke-dasharray: 5 5;
 ```
 
-- [Fuel Cell](@ref)
+### [Fuel Cell](@ref)
 
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': { 'background': '#D1EBDE' }}}%%
@@ -162,14 +163,14 @@ flowchart LR
   e1@{ animate: true }
   e2@{ animate: true }
  end
-    style A r:55px,fill:lightblue,stroke:black,color:black,stroke-dasharray: 3,5;
+    style A r:48px,fill:lightblue,stroke:black,color:black,stroke-dasharray: 3,5;
     style B fill:black,stroke:black,color:black;
-    style C r:55px,fill:#FFD700,stroke:black,color:black,stroke-dasharray: 3,5;
+    style C r:48px,fill:#FFD700,stroke:black,color:black,stroke-dasharray: 3,5;
     linkStyle 0 stroke:lightblue, stroke-width: 2px, stroke-dasharray: 5 5;
     linkStyle 1 stroke:#FFD700, stroke-width: 2px, stroke-dasharray: 5 5;
 ```
 
-- [Gas Storage](@ref)
+### [Gas Storage](@ref)
 
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': { 'background': '#D1EBDE' }}}%%
@@ -177,7 +178,7 @@ flowchart LR
   subgraph GasStorage
   direction LR
     A((Electricity)) e1@--> C{{..}} e2@--> A((Electricity))
-    B((Gas)) e3@--> C{{..}} e4@--> B((Gas))
+    B((Gas Type)) e3@--> C{{..}} e4@--> B((Gas Type))
     C e5@--> D[Storage] e6@--> C
     e1@{ animate: true }
     e2@{ animate: true }
@@ -186,8 +187,8 @@ flowchart LR
     e5@{ animate: true }
     e6@{ animate: true }
  end
-    style A r:55px,fill:#FFD700,stroke:black,color:black, stroke-dasharray: 3,5;
-    style B r:55px,fill:lightblue,stroke:black,color:black, stroke-dasharray: 3,5;
+    style A font-size:19px,r:55px,fill:#FFD700,stroke:black,color:black, stroke-dasharray: 3,5;
+    style B r:44px,fill:lightblue,stroke:black,color:black, stroke-dasharray: 3,5;
     style C fill:black,stroke:black,color:black;
     style D fill:lightblue,stroke:black,color:black;
 
@@ -196,7 +197,7 @@ flowchart LR
     linkStyle 4,5 stroke:lightblue, stroke-width: 3px;
 ```
 
-- [Hydro Reservoir](@ref)
+### [Hydro Reservoir](@ref)
 
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': { 'background': '#D1EBDE' }}}%%
@@ -212,14 +213,14 @@ flowchart LR
   
   style A r:55px,fill:#FFD700,stroke:black,color:black,stroke-dasharray: 3,5;
   style B fill:#FFD700,stroke:black,color:black;
-  style C r:55px,fill:#FFD700,stroke:black,color:black,stroke-dasharray: 3,5;
+  style C r:48px,fill:#FFD700,stroke:black,color:black,stroke-dasharray: 3,5;
 
   linkStyle 0 stroke:#FFD700, stroke-width: 2px;
   linkStyle 1 stroke:#FFD700, stroke-width: 2px;
   linkStyle 2 stroke:#FFD700, stroke-width: 2px;
 ```
 
-- [Must Run](@ref)
+### [Must Run](@ref)
 
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': { 'background': '#D1EBDE' }}}%%
@@ -229,13 +230,13 @@ flowchart LR
   A{{..}} e1@--> B((Electricity))
   e1@{ animate: true }
  end
-    style A r:55px,fill:black,stroke:black,color:black;
-    style B r:55px,fill:#FFD700,stroke:black,color:black,stroke-dasharray: 3,5;
+    style A fill:black,stroke:black,color:black;
+    style B fill:#FFD700,stroke:black,color:black,stroke-dasharray: 3,5;
     
     linkStyle 0 stroke:#FFD700, stroke-width: 2px, stroke-dasharray: 5 5;
 ```
 
-- [Natural Gas DAC](@ref)
+### [Natural Gas DAC](@ref)
 
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': { 'background': '#D1EBDE' }}}%%
@@ -256,9 +257,10 @@ flowchart LR
     style A r:55px,fill:#005F6A,stroke:black,color:white, stroke-dasharray: 3,5;
     style B r:55px,fill:lightgray,stroke:black,color:black, stroke-dasharray: 3,5;
     style C r:55px,fill:black,stroke:black,color:black, stroke-dasharray: 3,5;
-    style D r:55px,fill:#FFD700,stroke:black,color:black, stroke-dasharray: 3,5;
-    style E r:55px,fill:lightgray,stroke:black,color:black, stroke-dasharray: 3,5;
-    style F r:55px,fill:lightgray,stroke:black,color:black, stroke-dasharray: 3,5;
+    style D font-size:19px,r:55px,fill:#FFD700,stroke:black,color:black, stroke-dasharray: 3,5;
+    style E font-size:17px,r:55px,fill:lightgray,stroke:black,color:black, stroke-dasharray: 3,5;
+    style F font-size:15px,r:55px,fill:lightgray,stroke:black,color:black, stroke-dasharray: 3,5;
+
     linkStyle 0 stroke:#005F6A, stroke-width: 2px;
     linkStyle 1 stroke:lightgray, stroke-width: 2px;
     linkStyle 2 stroke:#FFD700, stroke-width: 2px;
@@ -266,7 +268,7 @@ flowchart LR
     linkStyle 4 stroke:lightgray, stroke-width: 2px;
 ```
 
-- [Transmission Link](@ref)
+### [Transmission Link](@ref)
 
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': { 'background': '#D1EBDE' }}}%%
@@ -281,7 +283,7 @@ flowchart LR
     linkStyle 0 stroke:#FFD700, stroke-width: 2px;
 ```
 
-- [Thermal Hydrogen Plant (with and without CCS)](@ref)
+### [Thermal Hydrogen Plant (with and without CCS)](@ref)
 
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': { 'background': '#D1EBDE' }}}%%
@@ -303,9 +305,9 @@ flowchart LR
   style A r:55px,fill:#005F6A,stroke:black,color:white,stroke-dasharray: 3,5;
   style B r:55px,fill:#FFD700,stroke:black,color:black,stroke-dasharray: 3,5;
   style C r:55px,fill:black,stroke:black,color:black, stroke-dasharray: 3,5;
-  style D r:55px,fill:lightblue,stroke:black,color:black,stroke-dasharray: 3,5;
-  style E r:55px,fill:lightgray,stroke:black,color:black,stroke-dasharray: 3,5;
-  style F r:55px,fill:lightgray,stroke:black,color:black,stroke-dasharray: 3,5;
+  style D font-size:21px,r:55px,fill:lightblue,stroke:black,color:black,stroke-dasharray: 3,5;
+  style E font-size:17px,r:55px,fill:lightgray,stroke:black,color:black,stroke-dasharray: 3,5;
+  style F font-size:15px,r:55px,fill:lightgray,stroke:black,color:black,stroke-dasharray: 3,5;
 
   linkStyle 0 stroke:#005F6A, stroke-width: 2px;
   linkStyle 1 stroke:#FFD700, stroke-width: 2px;
@@ -313,7 +315,7 @@ flowchart LR
   linkStyle 3,4 stroke:lightgray, stroke-width: 2px;
 ```
 
-- [Thermal Power Plant (with and without CCS)](@ref)
+### [Thermal Power Plant (with and without CCS)](@ref)
 
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': { 'background': '#D1EBDE' }}}%%
@@ -322,8 +324,8 @@ flowchart LR
   direction BT
   A((Fuel)) e1@ --> B{{..}}
   B e2@ --> C((Electricity))
-  B e3@ --> D((CO₂))
-  B e4@ --> E((CO₂Captured))
+  B e3@ --> D((CO₂ Emitted))
+  B e4@ --> E((CO₂ Captured))
   e1@{animate: true}
   e2@{animate: true}
   e3@{animate: true}
@@ -331,16 +333,17 @@ flowchart LR
  end
     style A r:55px,fill:#005F6A,stroke:black,color:white,stroke-dasharray: 3,5;
     style B r:55px,fill:black,stroke:black,color:black,stroke-dasharray: 3,5;
-    style C r:55px,fill:#FFD700,stroke:black,color:black,stroke-dasharray: 3,5;
-    style D r:55px,fill:lightgray,stroke:black,color:black,stroke-dasharray: 3,5;
-    style E r:55px,fill:lightgray,stroke:black,color:black,stroke-dasharray: 3,5;
+    style C font-size:19px,r:55px,fill:#FFD700,stroke:black,color:black,stroke-dasharray: 3,5;
+    style D font-size:17px,r:55px,fill:lightgray,stroke:black,color:black,stroke-dasharray: 3,5;
+    style E font-size:15px,r:55px,fill:lightgray,stroke:black,color:black,stroke-dasharray: 3,5;
+
   linkStyle 0 stroke:#005F6A, stroke-width: 2px;
   linkStyle 1 stroke:#FFD700, stroke-width: 2px;
   linkStyle 2 stroke:lightgray, stroke-width: 2px;
   linkStyle 3 stroke:lightgray, stroke-width: 2px;
 ```
 
-- [Variable Renewable Energy resources (VRE)](@ref vre)
+### [Variable Renewable Energy resources (VRE)](@ref vre)
 
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': { 'background': '#D1EBDE' }}}%%
@@ -354,7 +357,7 @@ flowchart LR
  end
     style A r:55px,fill:#FFD700,stroke:black,color:black,stroke-dasharray: 3,5;
     style B r:55px,fill:black,stroke:black,color:black,stroke-dasharray: 3,5;
-    style C r:55px,fill:#FFD700,stroke:black,color:black,stroke-dasharray: 3,5;
+    style C font-size:20px,r:55px,fill:#FFD700,stroke:black,color:black,stroke-dasharray: 3,5;
     linkStyle 0 stroke:#FFD700, stroke-width: 2px;
     linkStyle 1 stroke:#FFD700, stroke-width: 2px;
 ```

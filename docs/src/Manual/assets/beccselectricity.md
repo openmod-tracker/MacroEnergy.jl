@@ -29,8 +29,8 @@ flowchart LR
     B((Biomass)) e1@--> A{{..}}
     C((CO₂ Source)) e2@--> A
     A e5@--> D((Electricity))
-    A e3@--> E((Emitted CO₂))
-    A e4@--> F((Captured CO₂))
+    A e3@--> E((CO₂ Emitted))
+    A e4@--> F((CO₂ Captured))
     e1@{ animate: true }
     e2@{ animate: true }
     e3@{ animate: true }
@@ -40,9 +40,9 @@ flowchart LR
     style A fill:black,stroke:black,color:black;
     style B r:55px,fill:palegreen,stroke:black,color:black, stroke-dasharray: 3,5;
     style C r:55px,fill:lightgray,stroke:black,color:black, stroke-dasharray: 3,5;
-    style D r:55px,fill:#FFD700,stroke:black,color:black, stroke-dasharray: 3,5;
-    style E r:55px,fill:lightgray,stroke:black,color:black, stroke-dasharray: 3,5;
-    style F r:55px,fill:lightgray,stroke:black,color:black, stroke-dasharray: 3,5;
+    style D font-size:19px,r:55px,fill:#FFD700,stroke:black,color:black, stroke-dasharray: 3,5;
+    style E font-size:17px,r:55px,fill:lightgray,stroke:black,color:black, stroke-dasharray: 3,5;
+    style F font-size:15px,r:55px,fill:lightgray,stroke:black,color:black, stroke-dasharray: 3,5;
 
     linkStyle 0 stroke:palegreen, stroke-width: 2px;
     linkStyle 1,3,4 stroke:lightgray, stroke-width: 2px;

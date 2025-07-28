@@ -31,8 +31,8 @@ flowchart LR
     C((CO₂ Source)) e2@--> A
     D((Electricity)) e3@--> A
     A e4@--> E((Hydrogen))
-    A e5@--> F((Emitted CO₂))
-    A e6@--> G((Captured CO₂))
+    A e5@--> F((CO₂ Emitted))
+    A e6@--> G((CO₂ Captured))
     e1@{ animate: true }
     e2@{ animate: true }
     e3@{ animate: true }
@@ -44,14 +44,14 @@ flowchart LR
     style B r:55px,fill:palegreen,stroke:black,color:black, stroke-dasharray: 3,5;
     style C r:55px,fill:lightgray,stroke:black,color:black, stroke-dasharray: 3,5;
     style D r:55px,fill:#FFD700,stroke:black,color:black, stroke-dasharray: 3,5;
-    style E r:55px,fill:lightblue,stroke:black,color:black, stroke-dasharray: 3,5;
-    style F r:55px,fill:lightgray,stroke:black,color:black, stroke-dasharray: 3,5;
-    style G r:55px,fill:lightgray,stroke:black,color:black, stroke-dasharray: 3,5;
+    style E font-size:21px,r:55px,fill:lightblue,stroke:black,color:black, stroke-dasharray: 3,5;
+    style F font-size:17px,r:55px,fill:lightgray,stroke:black,color:black, stroke-dasharray: 3,5;
+    style G font-size:15px,r:55px,fill:lightgray,stroke:black,color:black, stroke-dasharray: 3,5;
 
     linkStyle 0 stroke:palegreen, stroke-width: 2px;
     linkStyle 1 stroke:lightgray, stroke-width: 2px;
     linkStyle 2 stroke:#FFD700, stroke-width: 2px;
-    linkStyle 3 stroke:lightgray, stroke-width: 2px;
+    linkStyle 3 stroke:lightblue, stroke-width: 2px;
     linkStyle 4 stroke:lightgray, stroke-width: 2px;
     linkStyle 5 stroke:lightgray, stroke-width: 2px;
 ```

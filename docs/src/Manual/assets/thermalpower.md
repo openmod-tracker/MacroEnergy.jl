@@ -30,8 +30,8 @@ flowchart LR
   direction BT
   A((Fuel)) e1@ --> B{{..}}
   B e2@ --> C((Electricity))
-  B e3@ --> D((CO₂))
-  B e4@ --> E((CO₂Captured))
+  B e3@ --> D((CO₂ Emitted))
+  B e4@ --> E((CO₂ Captured))
   e1@{animate: true}
   e2@{animate: true}
   e3@{animate: true}
@@ -39,9 +39,9 @@ flowchart LR
  end
     style A r:55px,fill:#005F6A,stroke:black,color:white,stroke-dasharray: 3,5;
     style B r:55px,fill:black,stroke:black,color:black,stroke-dasharray: 3,5;
-    style C r:55px,fill:#FFD700,stroke:black,color:black,stroke-dasharray: 3,5;
-    style D r:55px,fill:lightgray,stroke:black,color:black,stroke-dasharray: 3,5;
-    style E r:55px,fill:lightgray,stroke:black,color:black,stroke-dasharray: 3,5;
+    style C font-size:19px,r:55px,fill:#FFD700,stroke:black,color:black,stroke-dasharray: 3,5;
+    style D font-size:17px,r:55px,fill:lightgray,stroke:black,color:black,stroke-dasharray: 3,5;
+    style E font-size:15px,r:55px,fill:lightgray,stroke:black,color:black,stroke-dasharray: 3,5;
 
   linkStyle 0 stroke:#005F6A, stroke-width: 2px;
   linkStyle 1 stroke:#FFD700, stroke-width: 2px;
@@ -65,6 +65,9 @@ Where:
 - ``\epsilon`` represents the stoichiometric coefficients defined in the [Conversion Process Parameters](@ref thermalpower_conversion_process_parameters) section.
 
 ## [Input File (Standard Format)](@id thermalpower_input_file)
+
+!!! note "Techno-Economic Analysis"
+    Techno-economic analysis background is recommended for updating or adding conversion process parameters. For users not familiar with TEA, they can refer to [this guide](@ref tea). 
 
 The easiest way to include a thermal power plant asset in a model is to create a new file (either JSON or CSV) and place it in the `assets` directory together with the other assets. 
 

@@ -29,7 +29,7 @@ flowchart LR
  end
     style A r:55px,fill:#FFD700,stroke:black,color:black,stroke-dasharray: 3,5;
     style B r:55px,fill:black,stroke:black,color:black,stroke-dasharray: 3,5;
-    style C r:55px,fill:#FFD700,stroke:black,color:black,stroke-dasharray: 3,5;
+    style C font-size:20px,r:55px,fill:#FFD700,stroke:black,color:black,stroke-dasharray: 3,5;
     linkStyle 0 stroke:#FFD700, stroke-width: 2px;
     linkStyle 1 stroke:#FFD700, stroke-width: 2px;
 ```

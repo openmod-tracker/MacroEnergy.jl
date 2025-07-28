@@ -25,8 +25,8 @@ flowchart LR
   A{{..}} e1@--> B((Electricity))
   e1@{ animate: true }
  end
-    style A r:55px,fill:black,stroke:black,color:black;
-    style B r:55px,fill:#FFD700,stroke:black,color:black,stroke-dasharray: 3,5;
+    style A fill:black,stroke:black,color:black;
+    style B fill:#FFD700,stroke:black,color:black,stroke-dasharray: 3,5;
     
     linkStyle 0 stroke:#FFD700, stroke-width: 2px, stroke-dasharray: 5 5;
 ```

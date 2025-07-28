@@ -28,7 +28,7 @@ flowchart LR
     e1@{ animate: true }
     e2@{ animate: true }
  end
-    style A  r:55px,fill:#FFD700,stroke:black,color:black,stroke-dasharray: 3,5;
+    style A font-size:19px,r:55px,fill:#FFD700,stroke:black,color:black,stroke-dasharray: 3,5;
     style B fill:#FFD700,stroke:black,color:black;
     linkStyle 0,1 stroke:#FFD700, stroke-width: 2px;
 ```

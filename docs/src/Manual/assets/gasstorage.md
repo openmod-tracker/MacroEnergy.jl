@@ -29,7 +29,7 @@ flowchart LR
   subgraph GasStorage
   direction LR
     A((Electricity)) e1@--> C{{..}} e2@--> A((Electricity))
-    B((Gas)) e3@--> C{{..}} e4@--> B((Gas))
+    B((Gas Type)) e3@--> C{{..}} e4@--> B((Gas Type))
     C e5@--> D[Storage] e6@--> C
     e1@{ animate: true }
     e2@{ animate: true }
@@ -38,8 +38,8 @@ flowchart LR
     e5@{ animate: true }
     e6@{ animate: true }
  end
-    style A r:55px,fill:#FFD700,stroke:black,color:black, stroke-dasharray: 3,5;
-    style B r:55px,fill:lightblue,stroke:black,color:black, stroke-dasharray: 3,5;
+    style A font-size:19px,r:55px,fill:#FFD700,stroke:black,color:black, stroke-dasharray: 3,5;
+    style B r:44px,fill:lightblue,stroke:black,color:black, stroke-dasharray: 3,5;
     style C fill:black,stroke:black,color:black;
     style D fill:lightblue,stroke:black,color:black;
 
