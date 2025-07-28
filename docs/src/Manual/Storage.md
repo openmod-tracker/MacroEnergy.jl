@@ -537,7 +537,7 @@ struct GasStorage{T} <: AbstractAsset
 end
 ```
 
-The following code snippets from the `GasStorage` `make()` function show part of how this Asset is implemented. We recommend reading the [guide on constructing Assets](@ref "Creating a New Asset") for more details on how to create Assets in Macro.
+The following code snippets from the `GasStorage` `make()` function show part of how this Asset is implemented. We recommend reading the [guide on constructing Assets](@ref modeler_create_asset) for more details on how to create Assets in Macro.
 
 ```julia
 function make(asset_type::Type{GasStorage}, data::AbstractDict{Symbol,Any}, system::System)

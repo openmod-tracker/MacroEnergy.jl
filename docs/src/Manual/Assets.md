@@ -1,6 +1,6 @@
 # Assets
 
-## Macro Asset Library
+## Overview
 
 Macro is designed to be a flexible and modular model that can adapt to various energy system representations. The model provides a rich library of pre-defined assets, enabling a "plug-and-play" approach for users building their own energy system.
 
@@ -20,7 +20,7 @@ Each asset page follows a consistent structure with the following sections:
 8. **Best Practices**: Guidelines for effective asset configuration and usage
 9. **Input File (Advanced Format)**: Advanced configuration options and formats
 
-## Available assets
+## Macro Asset Library
 The current library includes the following assets:
 
 - [Battery](@ref)
