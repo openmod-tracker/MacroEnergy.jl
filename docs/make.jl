@@ -44,6 +44,7 @@ const pages = [
             "Energy System Graph-Based Representation" => "Guides/Modeler Guide/modeler_es_graph.md",
             "Creating a New Sector" => "Guides/Modeler Guide/modeler_build_sectors.md",
             "Creating a New Asset" => "Guides/Modeler Guide/modeler_build_asset.md",
+            "Documenting an Asset" => "Guides/Modeler Guide/modeler_add_docs_to_asset.md",
             "Creating a New Example Case" => "Guides/Modeler Guide/modeler_create_example_case.md",
             "Suggested Development Workflow" => "Guides/Modeler Guide/modeler_workflow.md",
             "Debugging and Testing Tips" => "Guides/Modeler Guide/modeler_debugging_testing.md",
@@ -53,6 +54,7 @@ const pages = [
             "Type Hierarchy" => "Guides/Developer Guide/2_type_hierarchy.md",
         ],
     ],
+    "Assets" => "Assets/assets_guide.md",
     "Manual" => [
         "Introduction" => "Manual/manual_introduction.md",
         "Inputs" => "Manual/Inputs.md",
@@ -97,6 +99,9 @@ const pages = [
         "Downloading examples" => "References/ref_download_examples.md",
         # "Asset Library" => "References/2_assets.md", TODO: think if we should include this
     ],
+    "Appendix" => [
+        "TEA" => "Appendix/TEA.md",
+    ]
 ]
 
 # Build documentation.
