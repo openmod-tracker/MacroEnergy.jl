@@ -154,7 +154,7 @@ To simplify the input file and the asset configuration, the following constraint
 |--------------|---------|------------|----------------|----------|
 | `can_retire` | Boolean | Whether electric DAC asset capacity can be retired | - | true |
 | `can_expand` | Boolean | Whether electric DAC asset capacity can be expanded | - | true |
-| `existing_capacity` | Float64 | Initial installed electric DAC asset capacity | MW | 0.0 |
+| `existing_capacity` | Float64 | Initial installed electric DAC asset capacity | $t_{CO₂}/hr$ | 0.0 |
 | `capacity_size` | Float64 | Unit size for capacity decisions | - | 1.0 |
 
 #### Additional Investment Parameters
@@ -165,15 +165,16 @@ If [`MaxCapacityConstraint`](@ref max_capacity_constraint_ref) or [`MinCapacityC
 
 | Field | Type | Description | Units | Default |
 |--------------|---------|------------|----------------|----------|
-| `max_capacity` | Float64 | Maximum allowed electric DAC asset capacity | MW | Inf |
-| `min_capacity` | Float64 | Minimum allowed electric DAC asset capacity | MW | 0.0 |
+| `max_capacity` | Float64 | Maximum allowed electric DAC asset capacity | $t_{CO₂}/hr$ | Inf |
+| `min_capacity` | Float64 | Minimum allowed electric DAC asset capacity | $t_{CO₂}/hr$ | 0.0 |
 
 ### Economic Parameters
 | Field | Type | Description | Units | Default |
 |--------------|---------|------------|----------------|----------|
-| `investment_cost` | Float64 | CAPEX per unit electric DAC asset capacity | \$/MW/yr | 0.0 |
-| `fixed_om_cost` | Float64 | Fixed O&M costs of the electric DAC asset | \$/MW/yr | 0.0 |
-| `variable_om_cost` | Float64 | Variable O&M costs of the electric DAC asset | \$/MWh | 0.0 |
+| `investment_cost` | Float64 | CAPEX per unit electric DAC asset capacity | ``\$/(t_{CO₂}/hr)`` | 0.0 |
+| `annualized_investment_cost` | Union{Nothing,Float64} | Annualized CAPEX | ``\$/(t_{CO₂}/hr/yr)`` | calculated |
+| `fixed_om_cost` | Float64 | Fixed O&M costs of the electric DAC asset | ``\$/(t_{CO₂}/hr/yr)`` | 0.0 |
+| `variable_om_cost` | Float64 | Variable O&M costs of the electric DAC asset | ``\$/t_{CO₂}`` | 0.0 |
 
 ### Operational Parameters
 | Field | Type | Description | Units | Default |
